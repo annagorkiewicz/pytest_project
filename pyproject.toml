@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "pytest-project"
+version = "0.1.0"
+description = "Project for testing with pytest in django"
+authors = ["AG"]
+license = "Beerware"
+readme = "README.md"
+packages = [{include = "pytest_project"}]
+
+[tool.poetry.dependencies]
+python = "3.11.2"
+Django = "4.1.7"
+djangorestframework = "3.14.0"
+pytest-django = "4.5.2"
+black = "23.1.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
